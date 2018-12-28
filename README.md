@@ -1,6 +1,6 @@
-# vue-demo
+# modular packaging
 
-> A Vue.js project
+> 基于vue-cli扩展，实现分模块打包
 
 ## Build Setup
 
@@ -9,13 +9,13 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+ "dev-pro-one": "webpack-dev-server --config project-one/build/webpack.dev.conf.js --process --colors"
+ "dev-pro-two": "webpack-dev-server --config project-two/build/webpack.dev.conf.js --process --colors"
 
 # build for production with minification
-npm run build
+ "build-pro-one": "webpack --config project-one/build/webpack.prod.conf.js --process --colors"
+ "build-pro-two": "webpack --config project-two/build/webpack.prod.conf.js --process --colors"
 
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
 
 ## 目录说明
@@ -63,5 +63,3 @@ node_modules    全局项目依赖包
 package.json    全局项目依赖
 
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
