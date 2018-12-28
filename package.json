@@ -2,7 +2,7 @@
   "name": "vue-demo",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "kongpp <kongpp@newhope.cn>",
+  "author": "kongpp <peipei8356@163.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
