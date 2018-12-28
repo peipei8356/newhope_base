@@ -1,0 +1,40 @@
+@import '../../assets/css/style-Variate.styl'
+img {
+  content: normal !important
+}
+/*箭头（左、右）*/
+.help-icon
+    width: 32px
+    height: 32px
+    box-sizing: border-box
+    display: block
+    top: 36px
+    right: 0
+
+.help-icon.help-down-icon
+    background-image: url("./common/images/down_arrow_2x.png")
+    background-image: -webkit-image-set( url(./common/images/down_arrow_2x.png) 2x, url(./common/images/down_arrow_3x.png) 3x )
+    background-repeat: no-repeat
+    background-size: 100% auto
+
+.help-icon.help-left-icon
+    background-image: url("./common/images/left_arrow_2x.png")
+    background-image: -webkit-image-set( url(./common/images/left_arrow_2x.png) 2x, url(./common/images/left_arrow_3x.png) 3x )
+    background-repeat: no-repeat
+    background-size: 100% auto
+
+.help-icon.arrow-rotating
+    transition: 0.1s;
+    transform: rotate(-180deg)
+
+/*问题分类*/
+.problem-list ul li
+    line-height: 104px
+    //border-top: 1px solid $borderGray
+    padding-right: 32px
+    margin-left: 32px
+
+.problem-list .help-item-con
+    line-height: 48px
+    padding-bottom: 32px
+

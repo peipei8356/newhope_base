@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    // TypeScript 编译器输出的 JavaScript 采用 es2015 模块化，使 Tree Shaking 生效
+    "module": "commonjs",
+    "moduleResolution": "node",
+    // 这可以对 `this` 上的数据属性进行更严格的推断
+    "strict": true,
+    // 与 Vue 的浏览器支持保持一致
+    "target": "es5",
+    // 在表达式和声明上有隐含的any类型时报错
+    "noImplicitAny": true,
+    "sourceMap": true,
+    // 注入輔助函數,减少代码冗余
+    "importHelpers": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+
